@@ -123,8 +123,9 @@ gulp.task('inject', function () {
 gulp.task('watch', function () {
     browserSync.init({
         server: {
-            baseDir: 'app/dist'
-        }
+            baseDir: 'app/dist',
+        },
+        port: 80
     });
 
     gulp.watch('app/src/index.html', ['inject']);
