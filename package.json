@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/panteng/wechat-h5-boilerplate.git"
   },
+  "scripts": {
+    "run": "gulp dev"
+  },
   "author": "Chris Pan",
   "license": "MIT",
   "devDependencies": {
