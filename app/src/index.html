@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Wechat H5 Boilerplate</title>
+    <title>纤思韵</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- Add your keywords and description here for SEO. -->
     <meta name="keywords" content="">
@@ -185,19 +185,22 @@
 <script>
     var obj = {
         title: '纤思韵产后修复纤体中心', // 分享标题
+        desc:'纤思韵产后修复纤体中心',
         link: 'http://ec2-52-39-26-195.us-west-2.compute.amazonaws.com', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-        imgUrl: '/images/291554027594_.pic.jpg', // 分享图标
+        imgUrl: 'http://ec2-52-39-26-195.us-west-2.compute.amazonaws.com/images/291554027594_.pic.jpg', // 分享图标
         success: function () {
-            // 用户确认分享后执行的回调函数
+            alert('sus '+JSON.stringify(obj))
         },
         cancel: function () {
-            // 用户取消分享后执行的回调函数
+            alert('fail'+JSON.stringify(obj))
         },
     }
     wx && wx.ready(function () {
         wx.onMenuShareTimeline(obj);
         wx.onMenuShareAppMessage(obj);
     })
+    wx.onMenuShareTimeline(obj);
+    wx.onMenuShareAppMessage(obj);
 </script>
 </body>
 
